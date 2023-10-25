@@ -389,6 +389,8 @@ namespace System.Collections.Immutable
 
         public sealed partial class Builder : Generic.IList<T>, Generic.ICollection<T>, Generic.IEnumerable<T>, IEnumerable, Generic.IReadOnlyList<T>, Generic.IReadOnlyCollection<T>
         {
+            internal Builder() { }
+
             public int Capacity { get { throw null; } set { } }
 
             public int Count { get { throw null; } set { } }
@@ -561,6 +563,8 @@ namespace System.Collections.Immutable
 
     public sealed partial class ImmutableDictionary<TKey, TValue> : IImmutableDictionary<TKey, TValue>, Generic.IReadOnlyDictionary<TKey, TValue>, Generic.IEnumerable<Generic.KeyValuePair<TKey, TValue>>, IEnumerable, Generic.IReadOnlyCollection<Generic.KeyValuePair<TKey, TValue>>, Generic.IDictionary<TKey, TValue>, Generic.ICollection<Generic.KeyValuePair<TKey, TValue>>, IDictionary, ICollection
     {
+        internal ImmutableDictionary() { }
+
         public static readonly ImmutableDictionary<TKey, TValue> Empty;
         public int Count { get { throw null; } }
 
@@ -674,6 +678,8 @@ namespace System.Collections.Immutable
 
         public sealed partial class Builder : Generic.IDictionary<TKey, TValue>, Generic.ICollection<Generic.KeyValuePair<TKey, TValue>>, Generic.IEnumerable<Generic.KeyValuePair<TKey, TValue>>, IEnumerable, Generic.IReadOnlyDictionary<TKey, TValue>, Generic.IReadOnlyCollection<Generic.KeyValuePair<TKey, TValue>>, IDictionary, ICollection
         {
+            internal Builder() { }
+
             public int Count { get { throw null; } }
 
             public TValue this[TKey key] { get { throw null; } set { } }
@@ -802,6 +808,8 @@ namespace System.Collections.Immutable
 
     public sealed partial class ImmutableHashSet<T> : IImmutableSet<T>, Generic.IReadOnlyCollection<T>, Generic.IEnumerable<T>, IEnumerable, Generic.ICollection<T>, Generic.ISet<T>, ICollection, Generic.IReadOnlySet<T>
     {
+        internal ImmutableHashSet() { }
+
         public static readonly ImmutableHashSet<T> Empty;
         public int Count { get { throw null; } }
 
@@ -891,6 +899,8 @@ namespace System.Collections.Immutable
 
         public sealed partial class Builder : Generic.IReadOnlyCollection<T>, Generic.IEnumerable<T>, IEnumerable, Generic.ISet<T>, Generic.ICollection<T>
         {
+            internal Builder() { }
+
             public int Count { get { throw null; } }
 
             public Generic.IEqualityComparer<T> KeyComparer { get { throw null; } set { } }
@@ -1040,6 +1050,8 @@ namespace System.Collections.Immutable
 
     public sealed partial class ImmutableList<T> : IImmutableList<T>, Generic.IReadOnlyList<T>, Generic.IEnumerable<T>, IEnumerable, Generic.IReadOnlyCollection<T>, Generic.IList<T>, Generic.ICollection<T>, IList, ICollection
     {
+        internal ImmutableList() { }
+
         public static readonly ImmutableList<T> Empty;
         public int Count { get { throw null; } }
 
@@ -1213,6 +1225,8 @@ namespace System.Collections.Immutable
 
         public sealed partial class Builder : Generic.IList<T>, Generic.ICollection<T>, Generic.IEnumerable<T>, IEnumerable, IList, ICollection, Generic.IReadOnlyList<T>, Generic.IReadOnlyCollection<T>
         {
+            internal Builder() { }
+
             public int Count { get { throw null; } }
 
             public T this[int index] { get { throw null; } set { } }
@@ -1383,6 +1397,8 @@ namespace System.Collections.Immutable
 
     public sealed partial class ImmutableQueue<T> : IImmutableQueue<T>, Generic.IEnumerable<T>, IEnumerable
     {
+        internal ImmutableQueue() { }
+
         public static ImmutableQueue<T> Empty { get { throw null; } }
 
         public bool IsEmpty { get { throw null; } }
@@ -1461,6 +1477,8 @@ namespace System.Collections.Immutable
 
     public sealed partial class ImmutableSortedDictionary<TKey, TValue> : IImmutableDictionary<TKey, TValue>, Generic.IReadOnlyDictionary<TKey, TValue>, Generic.IEnumerable<Generic.KeyValuePair<TKey, TValue>>, IEnumerable, Generic.IReadOnlyCollection<Generic.KeyValuePair<TKey, TValue>>, Generic.IDictionary<TKey, TValue>, Generic.ICollection<Generic.KeyValuePair<TKey, TValue>>, IDictionary, ICollection
     {
+        internal ImmutableSortedDictionary() { }
+
         public static readonly ImmutableSortedDictionary<TKey, TValue> Empty;
         public int Count { get { throw null; } }
 
@@ -1576,6 +1594,8 @@ namespace System.Collections.Immutable
 
         public sealed partial class Builder : Generic.IDictionary<TKey, TValue>, Generic.ICollection<Generic.KeyValuePair<TKey, TValue>>, Generic.IEnumerable<Generic.KeyValuePair<TKey, TValue>>, IEnumerable, Generic.IReadOnlyDictionary<TKey, TValue>, Generic.IReadOnlyCollection<Generic.KeyValuePair<TKey, TValue>>, IDictionary, ICollection
         {
+            internal Builder() { }
+
             public int Count { get { throw null; } }
 
             public TValue this[TKey key] { get { throw null; } set { } }
@@ -1706,6 +1726,8 @@ namespace System.Collections.Immutable
 
     public sealed partial class ImmutableSortedSet<T> : IImmutableSet<T>, Generic.IReadOnlyCollection<T>, Generic.IEnumerable<T>, IEnumerable, Generic.IReadOnlySet<T>, Generic.IReadOnlyList<T>, Generic.IList<T>, Generic.ICollection<T>, Generic.ISet<T>, IList, ICollection
     {
+        internal ImmutableSortedSet() { }
+
         public static readonly ImmutableSortedSet<T> Empty;
         public int Count { get { throw null; } }
 
@@ -1833,6 +1855,8 @@ namespace System.Collections.Immutable
 
         public sealed partial class Builder : Generic.IReadOnlyCollection<T>, Generic.IEnumerable<T>, IEnumerable, Generic.ISet<T>, Generic.ICollection<T>, ICollection
         {
+            internal Builder() { }
+
             public int Count { get { throw null; } }
 
             public T this[int index] { get { throw null; } }
@@ -1931,6 +1955,8 @@ namespace System.Collections.Immutable
 
     public sealed partial class ImmutableStack<T> : IImmutableStack<T>, Generic.IEnumerable<T>, IEnumerable
     {
+        internal ImmutableStack() { }
+
         public static ImmutableStack<T> Empty { get { throw null; } }
 
         public bool IsEmpty { get { throw null; } }
